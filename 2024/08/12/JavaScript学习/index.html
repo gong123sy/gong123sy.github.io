@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <!-- SEO相关 -->
     
-      <link rel="canonical" href="http://gong123sy.github.io/2024/08/08/js学完再回来整吧/"/>
+      <link rel="canonical" href="http://gong123sy.github.io/2024/08/12/javascript学习/"/>
         <!-- 渲染优化 -->
           <meta http-equiv='x-dns-prefetch-control' content='on' />
             <link rel='dns-prefetch' href='https://unpkg.com'>
@@ -55,19 +55,19 @@
 
                                             <!-- feed -->
                                                       <!-- 页面元数据 -->
-                                                      <title>js学完再回来整吧 - GSY</title>
+                                                      <title>JavaScript学习 - GSY</title>
                                                         <meta name="keywords" content="null">
                                                           <meta desc name="description" content="简单的博客 - GSY - GSY">
                                                             
 <meta property="og:type" content="article">
-<meta property="og:title" content="js学完再回来整吧">
-<meta property="og:url" content="http://gong123sy.github.io/2024/08/08/js%E5%AD%A6%E5%AE%8C%E5%86%8D%E5%9B%9E%E6%9D%A5%E6%95%B4%E5%90%A7/index.html">
+<meta property="og:title" content="JavaScript学习">
+<meta property="og:url" content="http://gong123sy.github.io/2024/08/12/JavaScript%E5%AD%A6%E4%B9%A0/index.html">
 <meta property="og:site_name" content="GSY">
-<meta property="og:description" content="简单的博客">
+<meta property="og:description" content="2024-08-12 typeof 检查结果返回字符串  反单引号 &#96; &#96;表示模版字符串，模版字符串中使用 ${ } 可以嵌入变量  数据类型 123456789101112131415161718整数 int大整数 bigint字符串 string布尔值 boolean空值 null 	空值用来表示空对象    空值只有一个 null	使用 typeof 检查一个空值会返回 &quot;">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
-<meta property="article:published_time" content="2024-08-08T08:58:26.000Z">
-<meta property="article:modified_time" content="2024-08-08T08:58:26.436Z">
+<meta property="article:published_time" content="2024-08-12T11:02:18.000Z">
+<meta property="article:modified_time" content="2024-08-12T11:49:55.536Z">
 <meta property="article:author" content="GSY">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png">
@@ -2509,7 +2509,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
 <div id="l_main" class=''>
   <article itemscope itemtype="http://schema.org/Article" class="article post white-box reveal md shadow floatable blur article-type-post" id="post" itemscope itemprop="blogPost">
-  <link itemprop="mainEntityOfPage" href="http://gong123sy.github.io/2024/08/08/js学完再回来整吧/">
+  <link itemprop="mainEntityOfPage" href="http://gong123sy.github.io/2024/08/12/JavaScript学习/">
   <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
     <meta itemprop="name" content="GSY">
   </span>
@@ -2530,7 +2530,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     
     
       <h1 class="title" itemprop="name headline">
-        js学完再回来整吧
+        JavaScript学习
       </h1>
       <div class='new-meta-box'>
         
@@ -2551,10 +2551,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
           
         
           
-            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-08-08T16:58:26+08:00">
+            <div class="new-meta-item date" itemprop="dateCreated datePublished" datetime="2024-08-12T19:02:18+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：2024年8月8日</p>
+    <p>发布于：2024年8月12日</p>
   </a>
 </div>
 
@@ -2577,7 +2577,30 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
 
   <div id="layoutHelper-page-plugins"></div>
   <div id="post-body" itemprop="articleBody">
-    
+    <h4 id="2024-08-12"><a href="#2024-08-12" class="headerlink" title="2024-08-12"></a>2024-08-12</h4><ul>
+<li><p>typeof 检查结果返回字符串</p>
+</li>
+<li><p>反单引号 ` &#96;表示模版字符串，模版字符串中使用 ${ } 可以嵌入变量</p>
+</li>
+<li><p>数据类型</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">整数 int</span><br><span class="line">大整数 bigint</span><br><span class="line">字符串 string</span><br><span class="line"></span><br><span class="line">布尔值 boolean</span><br><span class="line">空值 <span class="literal">null</span> </span><br><span class="line">	空值用来表示空对象</span><br><span class="line">    空值只有一个 <span class="literal">null</span></span><br><span class="line">	使用 <span class="keyword">typeof</span> 检查一个空值会返回 <span class="string">&quot;object&quot;</span></span><br><span class="line"></span><br><span class="line">未定义 <span class="literal">undefined</span></span><br><span class="line">	声明变量未赋值，它的值就是 <span class="literal">undefined</span></span><br><span class="line">	<span class="literal">undefined</span> 类型的值只有一个就是 <span class="literal">undefined</span></span><br><span class="line">	使用 <span class="keyword">typeof</span> 检查时会返回 <span class="string">&quot;undefined&quot;</span></span><br><span class="line"></span><br><span class="line">符号 symbol</span><br><span class="line">	用来创建一个唯一的标识</span><br><span class="line">    使用 <span class="keyword">typeof</span> 检查符号时会返回 <span class="string">&quot;symbol&quot;</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>类型转换</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;字符串&quot;</span></span><br><span class="line">a = a.<span class="title function_">toString</span>()   <span class="literal">null</span> 和 <span class="literal">undefined</span> 类型没有这个函数，调用会报错</span><br><span class="line">a = <span class="title class_">String</span>(a)      <span class="literal">null</span> 和 <span class="literal">undefined</span> 调用转换为 <span class="string">&quot;null&quot;</span> 和 <span class="string">&quot;undefined&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;数值&quot;</span></span><br><span class="line">a = <span class="title class_">Number</span>(a)</span><br><span class="line"><span class="number">1.</span>字符串为合法数字则转</span><br><span class="line">	   不是合法数字转为 <span class="title class_">NaN</span>	</span><br><span class="line">	   空串或全空格串转为 <span class="number">0</span>	</span><br><span class="line"></span><br><span class="line"><span class="number">2.</span> <span class="literal">true</span> 为 <span class="number">1</span>，<span class="literal">false</span> 为 <span class="number">0</span></span><br><span class="line"><span class="number">3.</span> <span class="literal">null</span> 为 <span class="number">0</span></span><br><span class="line"><span class="number">4.</span> <span class="literal">undefined</span> 为 <span class="title class_">NaN</span></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;专门将字符串转为数值，不是字符串转成字符串再转成数值&quot;</span></span><br><span class="line">a = <span class="built_in">parseInt</span>(a)  <span class="comment">//从左到右读取字符串的数字，遇到非数字或结束停止；可以拿来取整</span></span><br><span class="line">a = <span class="built_in">parseFloat</span>(a) <span class="comment">// 从左到右读取合法的小数</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="string">&quot;布尔值&quot;</span></span><br><span class="line">a = <span class="title class_">Boolean</span>(a)</span><br><span class="line"><span class="comment">//数字时 0 和 NaN 是 false，其他true</span></span><br><span class="line"><span class="comment">//字符串时 空串false，其他true</span></span><br><span class="line"><span class="comment">//null 和 undefined 都为 false</span></span><br><span class="line"><span class="comment">//对象为 true</span></span><br><span class="line"><span class="comment">//所有空的，没有的，错误的都转为false</span></span><br><span class="line"></span><br><span class="line"> </span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>算术运算</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">a = <span class="number">10</span> - <span class="string">&#x27;5&#x27;</span> 		<span class="comment">// 10 - 5</span></span><br><span class="line">a = <span class="number">10</span> + <span class="literal">true</span> 		<span class="comment">// 10 + 1</span></span><br><span class="line">a = <span class="number">10</span> + <span class="literal">null</span> 		<span class="comment">// 10 + 0</span></span><br><span class="line">a = <span class="number">10</span> - <span class="literal">undefined</span>  <span class="comment">// 10 - NaN</span></span><br><span class="line">a = <span class="number">1</span> + <span class="string">&#x27;2&#x27;</span>  		<span class="comment">// &#x27;12&#x27;</span></span><br><span class="line">a = <span class="literal">true</span> + <span class="string">&quot;world&quot;</span>  <span class="comment">// &quot;trueworld&quot;</span></span><br><span class="line">a = <span class="literal">true</span> + <span class="string">&quot;&quot;</span> 		<span class="comment">// &quot;true&quot;</span></span><br><span class="line">a ??= <span class="number">10</span> 			<span class="comment">//空赋值，a为 null 和 undefined 时才被赋值</span></span><br><span class="line">a = <span class="string">&quot;123&quot;</span>;a = +a 	<span class="comment">// a=123类型转换</span></span><br><span class="line">a = <span class="number">5</span>;ans = a++ + ++a + a <span class="comment">// 5+7+7</span></span><br></pre></td></tr></table></figure>
+
+
+</li>
+<li><p>逻辑运算</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">对非布尔值取反，先转成bool值再取反</span><br></pre></td></tr></table></figure></li>
+</ul>
+
   </div>
   
   
@@ -2601,10 +2624,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-08-08T16:58:26+08:00">
+          <div class="new-meta-item date" itemprop="dateModified" datetime="2024-08-12T19:49:55+08:00">
   <a class='notlink'>
     <i class="fa-solid fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：2024年8月8日</p>
+    <p>更新于：2024年8月12日</p>
   </a>
 </div>
 
@@ -2623,7 +2646,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://gong123sy.github.io/2024/08/08/js%E5%AD%A6%E5%AE%8C%E5%86%8D%E5%9B%9E%E6%9D%A5%E6%95%B4%E5%90%A7/&title=js学完再回来整吧 - GSY&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://gong123sy.github.io/2024/08/12/JavaScript%E5%AD%A6%E4%B9%A0/&title=JavaScript学习 - GSY&summary="
           
           >
           
@@ -2635,7 +2658,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://gong123sy.github.io/2024/08/08/js%E5%AD%A6%E5%AE%8C%E5%86%8D%E5%9B%9E%E6%9D%A5%E6%95%B4%E5%90%A7/&title=js学完再回来整吧 - GSY&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://gong123sy.github.io/2024/08/12/JavaScript%E5%AD%A6%E4%B9%A0/&title=JavaScript学习 - GSY&summary="
           
           >
           
@@ -2647,7 +2670,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://gong123sy.github.io/2024/08/08/js%E5%AD%A6%E5%AE%8C%E5%86%8D%E5%9B%9E%E6%9D%A5%E6%95%B4%E5%90%A7/&title=js学完再回来整吧 - GSY&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://gong123sy.github.io/2024/08/12/JavaScript%E5%AD%A6%E4%B9%A0/&title=JavaScript学习 - GSY&summary="
           
           >
           
@@ -2680,20 +2703,9 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
     <div class="prev-next">
       
-        <a class='prev' href='/2024/08/12/JavaScript%E5%AD%A6%E4%B9%A0/'>
-          <p class='title'><i class="fa-solid fa-chevron-left" aria-hidden="true"></i>JavaScript学习</p>
-          <p class='content'>2024-08-12
-typeof 检查结果返回字符串
-
-反单引号 ` &#96;表示模版字符串，模版字符串中使用 ${ } 可以嵌入变量
-
-数据类型
-123456789101112131415...</p>
-        </a>
       
-      
-        <a class='next' href='/2024/08/07/%E6%B5%8B%E8%AF%95%E5%AF%BC%E8%88%AA%E6%A0%8F/'>
-          <p class='title'>测试导航栏<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
+        <a class='next' href='/2024/08/08/js%E5%AD%A6%E5%AE%8C%E5%86%8D%E5%9B%9E%E6%9D%A5%E6%95%B4%E5%90%A7/'>
+          <p class='title'>js学完再回来整吧<i class="fa-solid fa-chevron-right" aria-hidden="true"></i></p>
           <p class='content'></p>
         </a>
       
@@ -2710,7 +2722,7 @@ typeof 检查结果返回字符串
 
   <article class="post white-box shadow floatable blur" id="comments">
     <span hidden>
-      <meta itemprop="discussionUrl" content="/2024/08/08/js%E5%AD%A6%E5%AE%8C%E5%86%8D%E5%9B%9E%E6%9D%A5%E6%95%B4%E5%90%A7/index.html#comments">
+      <meta itemprop="discussionUrl" content="/2024/08/12/JavaScript%E5%AD%A6%E4%B9%A0/index.html#comments">
     </span>
     <p ct><i class='fa-solid fa-comments'></i> 评论</p>
     
@@ -2742,9 +2754,19 @@ typeof 检查结果返回字符串
   
 
 
-  <div class="">
-    <!-- pjax占位 -->
-  </div>
+  <section class="widget toc-wrapper desktop mobile " id="toc-div" >
+    
+  <header>
+    
+      <i class="fa-solid fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#2024-08-12"><span class="toc-text">2024-08-12</span></a></li></ol>
+    </div>
+  </section>
 
   
 
@@ -3316,7 +3338,7 @@ typeof 检查结果返回字符串
 </script>
 
 
-  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"GSY","url":"http://gong123sy.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"GSY","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://gong123sy.github.io/","sameAs":["https://github.com/volantis-x"],"description":"简单的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://gong123sy.github.io/","name":"GSY"}},{"@type":"ListItem","position":3,"item":{"@id":"http://gong123sy.github.io/2024/08/08/js学完再回来整吧/","name":"js学完再回来整吧"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"GSY","url":"http://gong123sy.github.io/","keywords":null,"description":"简单的博客","author":{"@type":"Person","name":"GSY","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://gong123sy.github.io/","description":"简单的博客"},"publisher":{"@type":"Organization","name":"GSY","url":"http://gong123sy.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://gong123sy.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"js学完再回来整吧","description":"简单的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://gong123sy.github.io/2024/08/08/js%E5%AD%A6%E5%AE%8C%E5%86%8D%E5%9B%9E%E6%9D%A5%E6%95%B4%E5%90%A7/"},"author":{"@type":"Person","name":"GSY","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://gong123sy.github.io/"},"publisher":{"@type":"Organization","name":"GSY","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://gong123sy.github.io/2024/08/08/js%E5%AD%A6%E5%AE%8C%E5%86%8D%E5%9B%9E%E6%9D%A5%E6%95%B4%E5%90%A7/","wordCount":0,"datePublished":"2024-08-08T08:58:26.000Z","dateModified":"2024-08-08T08:58:26.436Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
+  <script type="application/ld+json">[{"@context":"http://schema.org","@type":"Organization","name":"GSY","url":"http://gong123sy.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},{"@context":"http://schema.org","@type":"Person","name":"GSY","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://gong123sy.github.io/","sameAs":["https://github.com/volantis-x"],"description":"简单的博客"},{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"http://gong123sy.github.io/","name":"GSY"}},{"@type":"ListItem","position":3,"item":{"@id":"http://gong123sy.github.io/2024/08/12/JavaScript学习/","name":"JavaScript学习"}}]},{"@context":"http://schema.org","@type":"WebSite","name":"GSY","url":"http://gong123sy.github.io/","keywords":null,"description":"简单的博客","author":{"@type":"Person","name":"GSY","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://gong123sy.github.io/","description":"简单的博客"},"publisher":{"@type":"Organization","name":"GSY","url":"http://gong123sy.github.io/","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"potentialAction":{"@type":"SearchAction","name":"Site Search","target":{"@type":"EntryPoint","urlTemplate":"http://gong123sy.github.io?s={search_term_string}"},"query-input":"required name=search_term_string"}},{"@context":"http://schema.org","@type":"BlogPosting","headline":"JavaScript学习","description":"简单的博客","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"http://gong123sy.github.io/2024/08/12/JavaScript%E5%AD%A6%E4%B9%A0/"},"author":{"@type":"Person","name":"GSY","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png"},"url":"http://gong123sy.github.io/"},"publisher":{"@type":"Organization","name":"GSY","logo":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}},"url":"http://gong123sy.github.io/2024/08/12/JavaScript%E5%AD%A6%E4%B9%A0/","wordCount":0,"datePublished":"2024-08-12T11:02:18.000Z","dateModified":"2024-08-12T11:49:55.536Z","image":{"@type":"ImageObject","url":"https://unpkg.com/volantis-static@0.0.1654736714924/media/org.volantis/blog/favicon/android-chrome-192x192.png","width":192,"height":192}}]</script>
 
 
 
