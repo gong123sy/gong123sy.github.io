@@ -57,6 +57,7 @@ var binft = function (r) {
     var l = "",
     //此处改成你自己的诗词
     wordList = [
+            "世味酸咸谁自信，人生声利古难全。",
             "无论海角与天涯，大抵心安即是家。",
             "心似白云常自在，意如流水任东西。",
             "度尽劫波兄弟在，相逢一笑泯恩仇。",
@@ -105,8 +106,6 @@ var binft = function (r) {
             "荷尽已无擎雨盖，菊残犹有傲霜枝。",
             "春未绿，鬓先丝。人间别久不成悲。",
             "人生自是有情痴，此恨不关风与月。",
-            "劝君更尽一杯酒，西出阳关无故人。",
-            "知我者谓我心忧，不知我者谓我何求。",
             "莫道谗言如浪深，莫言迁客似沙沉。",
             "纵然一夜风吹去，只在芦花浅水边。",
             "万里桥西一草堂，百花潭水即沧浪。",
@@ -164,6 +163,24 @@ var binft = function (r) {
     i()
 };
 binft(document.getElementById('binft'));
+
+//网站动态标题开始 
+var OriginTitile = document.title,
+titleTime;
+document.addEventListener("visibilitychange",
+function() {
+    if (document.hidden) {
+        document.title = "等你回来 Σ(っ °Д °;)っ";
+        clearTimeout(titleTime)
+    } else {
+        document.title = "(/≧▽≦/)你又回来啦！ " ;
+        titleTime = setTimeout(function() {
+            document.title = OriginTitile
+        },
+        2000)
+    }
+});
+//网站动态标题结束
 
 
 
