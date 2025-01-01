@@ -1,0 +1,108 @@
+cover:
+  background: https://cdn.pixabay.com/photo/2017/10/10/07/48/hills-2836301_1280.jpg
+  height_scheme: full
+  layout_scheme: featured
+  title: "<font><span>GSY's</span> <span>Blog</span></font>"
+  subtitle: <div id="binft"></div>
+
+############################### Navigation Bar ############################### > start
+# 注意事项：建议规范全站路径 URL 最后带一个 "/" 例如 "about/"
+navbar:
+  visiable: auto # always, auto
+  logo: # choose [img] or [icon + title]
+    img: volantis-static/media/org.volantis/blog/Logo-NavBar@3x.png # https://gcore.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png
+    icon:
+    title:
+  menu:
+    - name: 博客
+      icon: fa-solid fa-rss
+      url: /
+    - name: 分类
+      icon: fa-solid fa-folder-open
+      url: categories/
+    - name: 标签
+      icon: fa-solid fa-tags
+      url: tags/
+    - name: 归档
+      icon: fa-solid fa-archive
+      url: archives/
+    - name: 实用工具
+      icon: fa fa-wrench
+      url: tools/
+    # - name: 友链
+    #   icon: fa-solid fa-link
+    #   url: friends/
+    - name: 关于
+      icon: fa-solid fa-info-circle
+      url: about/
+  search: Search... # Search bar placeholder
+############################### Navigation Bar ############################### > end
+
+custom_css:
+  fontfamily:
+    logofont:
+      fontfamily: '"Microsoft YaHei",Arial,"Varela Round", "PingFang SC",  Helvetica '
+      name: "Varela Round"
+      url: volantis-static/media/fonts/VarelaRound/VarelaRound-Regular.ttf # https://gcore.jsdelivr.net/gh/volantis-x/cdn-fonts/VarelaRound/VarelaRound-Regular.ttf
+      weight: normal
+      style: normal
+    bodyfont:
+      fontfamily: '"Microsoft YaHei",Arial,UbuntuMono, "Varela Round", "PingFang SC", Helvetica'
+      name: "UbuntuMono"
+      url: volantis-static/media/fonts/UbuntuMono/UbuntuMono-Regular.ttf # https://gcore.jsdelivr.net/gh/volantis-x/cdn-fonts/UbuntuMono/UbuntuMono-Regular.ttf
+      weight: normal
+      style: normal
+    codefont:
+      fontfamily: "Consolas, Monaco, Menlo, UbuntuMono"
+      # name: 'Monaco'
+      # url: volantis-static/media/fonts/Monaco/Monaco.ttf # https://gcore.jsdelivr.net/gh/volantis-x/cdn-fonts/Monaco/Monaco.ttf
+      # weight: normal
+      # style: normal
+
+  # cursor:
+  #   enable: true
+  #   # 鼠标样式在 https://unpkg.com/browse/volantis-static@0.0.1660614606622/media/cursor/ # https://github.com/inkss/common/tree/1/cursor
+  #   text: volantis-static/media/cursor/text.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/text.png
+  #   pointer: volantis-static/media/cursor/pointer.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/pointer.png
+  #   default: volantis-static/media/cursor/left_ptr.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/left_ptr.png
+  #   not-allowed: volantis-static/media/cursor/circle.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/circle.png
+  #   zoom-out: volantis-static/media/cursor/zoom-out.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/zoom-out.png
+  #   zoom-in: volantis-static/media/cursor/zoom-in.png # https://cdn.jsdelivr.net/gh/inkss/common@1/cursor/zoom-in.png
+  #   grab: volantis-static/media/cursor/openhand.png #
+
+sidebar:
+  widget_library:
+    webinfo:
+      class: webinfo
+      display: [desktop]
+      header:
+        icon: fa-solid fa-award
+        title: 站点信息
+      type:
+        article:
+          enable: true
+          text: "文章数目："
+          unit: "篇"
+        runtime:
+          enable: true
+          data: "2024/08/05"
+        visitcounter:
+          siteuv:
+            enable: true
+            text: "本站访客数："
+            unit: "人"
+          sitepv:
+            enable: true
+            text: "本站总访问量："
+            unit: "次"
+
+site_footer:
+  copyright: "[Copyright © since 2024 XXX](/)"
+
+article:
+  body:
+    meta_library:
+      author:
+        avatar: /images/favicon-16x16.png
+        name: GSY
+        url: https://github.com/gong123sy/gong123sy.github.io
